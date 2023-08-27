@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3, user-scalable=1">
+    <title>🍸 Kokteill</title>
+
+    <!-- Style-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Assets-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+
+<body onload="onLoad()">
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <h1><img src="assets/img/local_bar.svg" alt="Cocktail Glass Logo for Kokteill" class="kokteillSVG">
+                        Kokteill</h1>
+                </a>
+            </li>
+            <li class="floatrightnav">
+                <a href="info.html">
+                    <h2><img src="assets/img/brunch_dining.svg" alt="Information" class="kokteillSVG"> Info</h2>
+                </a>
+            </li>
+            <li class="floatrightnav">
+                <a href="tips.html">
+                    <h2><img src="assets/img/nightlife.svg" alt="Tips" class="kokteillSVG"> Tips</h2>
+                </a>
+            </li>
+            <li class="floatrightnav">
+                <a href="contact.html">
+                    <h2><img src="assets/img/mail.svg" alt="Contact" class="kokteillSVG"> Contact</h2>
+                </a>
+            </li>
+            <li class="floatrightnav">
+                <a href="random.html">
+                    <h2><img src="assets/img/liquor.svg" alt="Generate a random cocktail" class="kokteillSVG"> Random
+                    </h2>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <br>
+    <h2>Your random cocktail is :</h2>
+    <div id="container">
+        <main>
+            <div class="randombox" id="randomDrinkBox">
+                <h2>Loading ...</h2>
+            </div>
+        </main>
+    </div>
+    <h2>🥂 Click the card to generate a new cocktail 🍹</h2>
+    <script src="assets/js/random.js"></script>
+</body>
+
+</html>

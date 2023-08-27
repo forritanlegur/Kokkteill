@@ -1,0 +1,436 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #3e3c43;
+}
+
+main {
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+
+h1,
+h2,
+h3 {
+    color: #00ff7f;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    color: #232225;
+}
+
+label {
+    color: #00ff7f;
+    font-family: "Quicksand", sans-serif;
+    text-align: left;
+    font-size: 2rem;
+    padding: 20px;
+    display: block;
+}
+
+ul {
+    margin: 0px;
+}
+
+img {
+    border-radius: 10px;
+    padding: 1px;
+    width: 80%;
+    max-width: 14rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+b {
+    font-weight:bolder;
+    text-decoration: underline;
+
+}
+
+footer {
+    display: block;
+    color: #aca9b4;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+
+hr.footerdash {
+    border-bottom: 3px solid #65636b;
+    outline: none;
+}
+
+hr.dashed {
+    border-top: 3px dashed #938f9c;
+}
+
+fieldset {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    border-radius: 15px;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #7f7b8a;
+}
+
+article {
+    display: flex;
+}
+
+a:link {
+    color: #232225;
+}
+
+a:visited {
+    color: #1a8f55;
+}
+
+form {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch !important;
+}
+
+/* Kod för specifika IDs */
+.box {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.box > * {
+    flex: 1 1 80px;
+}
+
+.inputlabel {
+    min-width: 70%;
+    max-width: 90%;
+    border-radius: 10px;
+    border-width: 0px;
+    font-family: "Quicksand", sans-serif;
+    outline: none;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.randombox {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+}
+
+.textCard {
+    background: #f5f5f5;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px;
+    width: 94%;
+    line-height: 2.5rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    color: #232225;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    display: flex;
+    font-size: 20px;
+}
+
+
+/* kort */
+.card {
+    width: 190px;
+    padding: 0.8em;
+    margin: 0.4em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+    min-width: 19rem;
+    max-width: 20rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    color: #232225;
+    transition: transform 330ms ease-in-out;
+}
+
+.card h4 {
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.card li {
+    text-align: left;
+}
+
+.card:hover {
+    transform: perspective(1000px) translateY(-2%) rotateX(1deg);
+    backface-visibility: hidden;
+    box-shadow: 20px 20px 20px #232225;
+    filter: drop-shadow(0 0 0.75rem #232225);
+}
+
+.cardRandom {
+    width: 190px;
+    padding: 0.8em;
+    margin: 0.4em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+    min-width: 19rem;
+    max-width: 20rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    color: #232225;
+    transition: transform 330ms ease-in-out;
+    font-size: larger;
+}
+
+@keyframes rotateY {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animateRotate {
+    transform: rotateY(360deg);
+    box-shadow: 10px 10px 10px #232225;
+    transition-duration: 900ms;
+}
+/* Får texten i navbaren som inte är loggan flyta åt höger */
+.floatrightnav {
+    float: right !important;
+    padding-right: 5rem;
+}
+
+.kokteillSVG {
+    filter: invert(79%) sepia(18%) saturate(3706%) hue-rotate(90deg) brightness(97%) contrast(110%) !important;
+    max-width: 20%;
+    display: inline-block;
+}
+/* En liten reactive easter egg - ikonerna snurrar om man hovrar över dem*/
+.kokteillSVG:hover {
+    transform: rotate(45deg);
+    animation: kokteillSVG 1.2s linear infinite;
+}
+
+@keyframes kokteillSVG {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logoinline {
+    display: inline-block;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.searchBarInput {
+    min-width: 70%;
+    max-width: 90%;
+    border-radius: 10px;
+    border-width: 0px;
+    font-family: "Quicksand", sans-serif;
+    outline: none;
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.searchBarButton {
+    font-family: "Quicksand", sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: #00ff7f;
+    color: #312f36;
+    outline: none;
+    border: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.searchBarButton:active {
+    background-color: #125f39;
+}
+
+/* För att förenkla tab navigation och ge bättre keyboard accessibility har jag gjort det extra tydligt vilken knapp man fokuserar på*/
+.searchBarButton:focus-visible{
+    background-color: #229c5f;
+}
+
+.searchBarContainer,
+form {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+}
+/* nav bar  */
+.navigation ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #312f36;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: #7f7b8a;
+}
+
+.navigation img {
+    border-radius: 0px;
+    padding: 1px;
+    width: 30px;
+    max-width: 31px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.centered {
+  vertical-align: middle;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    max-width: 55%;
+}
+
+.absloute {
+    flex-direction: row;
+}
+
+.flexies {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.xl {
+    max-width: 90%;
+}
+
+.hoverbig {
+    transition: transform .2s;
+}
+
+.hoverbig:hover {
+    transform:scale(2.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.explain {
+    color: #aca9b4;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    #container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 9900px) and (min-width: 2500px) {
+.searchBarContainer, form {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+}
+}
+
+/* Gör navbaren mer komprimerat så att den får plats på en linje, på de flesta telefoner/små skärmar  */
+@media (min-width: 320px) and (max-width: 968px) {
+    .navigation li a {
+        padding: 14px 10px;
+    }
+
+    .navigation li {
+        padding: 14px 10px;
+    }
+    .searchBarInput {
+        width: 73%;
+    }
+}
